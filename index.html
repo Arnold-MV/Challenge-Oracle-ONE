@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+		<link rel="icon" href="img/log.svg">
+    <title>Encriptador de texto - Alura Challenges ONE</title>
+		<link rel="stylesheet" href="style.css">
+		<link rel="stylesheet" href="app.css">
+  </head>
+  <body>
+
+		<header class="header">
+			<img class="header__logo" src="img/log.svg" alt="logo de alura">
+		</header>
+
+		<main class="main">
+			<section class="main__primer-section">
+				<form>
+					<textarea class="primer-section__texto num1" type="text" name="" id="area" placeholder="Ingrese el texto aqui" required ></textarea>
+					<div class="contenedor-errores"></div>
+					<div class="div-botton">
+						<input type="button" class="primer-section__encriptar" id="bt-encriptar" value="Encirptar">
+						<input type="button" class="primer-section__desencriptar" id="bt-desencriptar" value="Desencirptar">
+					</div>
+				</form>
+			</section>
+
+			<section class="main__segundo-section">
+				<div class="segundo-section__div" id="area-munheco">
+					<img class="div__munheco" src="img/munheco.svg" alt="">
+					<h2 class="div__h2">Ningún mensaje fue encontrado</h2>
+					<p class="div__p">Ingresa el texto que desees encriptar o desencriptar.</p>
+				</div>
+
+				<div class="segundo-section__copiar">
+					<div class="copiar__contenido">
+						<p class="contenido__resultado"  id="texto-resultado"></p>
+					</div>
+					<input type="button" class="copiar__botom" id="bt-copiar" value="Copiar">
+				</div>
+			</section>
+		</main>
+
+		<script src="scrip.js"></script>
+	</body>
+</html>
