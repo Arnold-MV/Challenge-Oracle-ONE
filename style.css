@@ -49,6 +49,22 @@ body {
     -o-transition: 800ms;
 }
 
+.primer-section__div-text {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    text-align: center;
+}
+
+.bxs-info-circle {
+    color: rgba(103, 128, 142, 1);
+}
+
+.div-text__p {
+    font-size: 14px;
+    color: #495057;
+}
+
 .primer-section__encriptar:hover {
     font-size: 19px;
     cursor: pointer;
@@ -185,6 +201,32 @@ body {
 .ocultar {
     display: none;
 }
+
+/* FOOTER */
+
+.footer {
+    width: 100%;
+    left:-0%;
+    position:absolute;
+    background: #495057;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 9px;
+    text-align: center;
+}
+
+.footer__icon {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.icon__link {
+    font-size: 35px;
+}
+
 
 @media screen and (min-width:768px) {
     body {

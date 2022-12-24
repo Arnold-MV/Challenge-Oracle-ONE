@@ -3,7 +3,8 @@
   <head>
     <meta charset="UTF-8" />
 		<link rel="icon" href="img/log.svg">
-    <title>Encriptador de texto - Alura Challenges ONE</title>
+		<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    	<title>Encriptador de texto - Alura Challenges ONE</title>
 		<link rel="stylesheet" href="style.css">
 		<link rel="stylesheet" href="app.css">
   </head>
@@ -18,6 +19,10 @@
 				<form>
 					<textarea class="primer-section__texto num1" type="text" name="" id="area" placeholder="Ingrese el texto aqui" required ></textarea>
 					<div class="contenedor-errores"></div>
+					<div class="primer-section__div-text">
+						<i class='bx bxs-info-circle'></i>
+						<p class="div-text__p">Solo letras minúsculas y sin acentos.</p>
+					</div>
 					<div class="div-botton">
 						<input type="button" class="primer-section__encriptar" id="bt-encriptar" value="Encirptar">
 						<input type="button" class="primer-section__desencriptar" id="bt-desencriptar" value="Desencirptar">
@@ -40,6 +45,14 @@
 				</div>
 			</section>
 		</main>
+
+		<footer class="footer">
+			<div class="footer__icon">
+				<a class="icon__link" href="https://github.com/Arnold-MV" target="_blank"><i class='bx bxl-github'></i><a>
+				<a class="icon__link" href="https://www.linkedin.com/in/arnold-anderson-martinez-villela/" target="_blank"><i class='bx bxl-linkedin' ></i></a>
+			</div>
+			<p class="footer__p">&copy; Copyright - Desarrollado por Arnold Martinez. 2022</p>
+		</footer>
 
 		<script src="scrip.js"></script>
 	</body>
