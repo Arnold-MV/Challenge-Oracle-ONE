@@ -11,47 +11,57 @@
   <body>
 
 		<header class="header">
-			<img class="header__logo" src="img/log.svg" alt="logo de alura">
+			<div class="header__container">
+				<h1>
+					<img class="container__logo" src="img/log.svg" alt="logo de alura">
+				</h1>
+			</div>
 		</header>
 
 		<main class="main">
-			<section class="main__primer-section">
-				<form>
-					<textarea class="primer-section__texto num1" type="text" name="" id="area" placeholder="Ingrese el texto aqui" required ></textarea>
-					<div class="contenedor-errores"></div>
-					<div class="primer-section__div-text">
+			<section class="main__section">
+				
+					<textarea class="section__textarea num1" type="text" name="" id="area" placeholder="Ingrese el texto aqui" required ></textarea>
+					<div id="contenedor-errores" class="divv"></div>
+					<div class="section__div-text">
 						<i class='bx bxs-info-circle'></i>
 						<p class="div-text__p">Solo letras minúsculas y sin acentos.</p>
 					</div>
-					<div class="div-botton">
-						<input type="button" class="primer-section__encriptar" id="bt-encriptar" value="Encirptar">
-						<input type="button" class="primer-section__desencriptar" id="bt-desencriptar" value="Desencirptar">
+					<div class="section__div-botton">
+						<input type="button" class="div-botton__encriptar" id="bt-encriptar" value="Encirptar">
+						<input type="button" class="div-botton__desencriptar" id="bt-desencriptar" value="Desencirptar">
 					</div>
-				</form>
+				
 			</section>
 
-			<section class="main__segundo-section">
-				<div class="segundo-section__div" id="area-munheco">
-					<img class="div__munheco" src="img/munheco.svg" alt="">
-					<h2 class="div__h2">Ningún mensaje fue encontrado</h2>
-					<p class="div__p">Ingresa el texto que desees encriptar o desencriptar.</p>
-				</div>
-
-				<div class="segundo-section__copiar">
-					<div class="copiar__contenido">
-						<p class="contenido__resultado"  id="texto-resultado"></p>
+			<section class="main__section--dos">
+				<div class="section--dos__container">
+					<div class="container__div" id="area-munheco">
+						<img class="div__munheco" src="img/munheco.svg" alt="">
+						<h2 class="div__h2">Ningún mensaje fue encontrado</h2>
+						<p class="div__p">Ingresa el texto que desees encriptar o desencriptar.</p>
 					</div>
-					<input type="button" class="copiar__botom" id="bt-copiar" value="Copiar">
+					
+					<div class="container__copiar">
+						<div class="copiar__contenido">
+							<p class="contenido__resultado"  id="texto-resultado"></p>
+						</div>
+						<input type="button" class="copiar__botom" id="bt-copiar" value="Copiar">
+					</div>
 				</div>
 			</section>
+
+			
 		</main>
+
+		
 
 		<footer class="footer">
 			<div class="footer__icon">
 				<a class="icon__link" href="https://github.com/Arnold-MV" target="_blank"><i class='bx bxl-github'></i><a>
 				<a class="icon__link" href="https://www.linkedin.com/in/arnold-anderson-martinez-villela/" target="_blank"><i class='bx bxl-linkedin' ></i></a>
 			</div>
-			<p class="footer__p">&copy; Copyright - Desarrollado por Arnold Martinez. 2022</p>
+			<p class="footer__p">&copy; Copyright - Desarrollado por Arnold Martinez 2022</p>
 		</footer>
 
 		<script src="scrip.js"></script>
